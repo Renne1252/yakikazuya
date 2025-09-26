@@ -1,4 +1,205 @@
-html {
+/* html {
   height: 100%;
   width: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.zen-maru-gothic-medium {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* .m-plus-1p-regular {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rocknroll-one-regular {
+  font-family: "RocknRoll One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.potta-one-regular {
+  font-family: "Potta One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.hachi-maru-pop-regular {
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1 {
+    font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background-image: url("背景\(无边框\).png");
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+}
+
+#top {
+  background-color: #F46590;
+  opacity: 0.3;
+  width: 100%;
+  height: 7vh;
+}
+
+#logo {
+  background-image: url("橫幅(透明).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+  margin: auto;
+}
+ */
+
+.zen-maru-gothic-medium {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Reset and base styles */
+* {
+  font-family: "Zen Maru Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #111; /* Solid dark background */
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-image: url('素材/background.png'); /* Replace with your actual grid PNG */
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url('素材/手手游標.png') 12 27, auto;
+}
+
+/*
+#top-bar {
+  height: 7vh;
+  background-color: #F46590;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 40px;
+} 
+
+.nav {
+  opacity: 1;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+*/
+
+#top-bar {
+  height: 7vh;
+  background-color: rgba(244, 101, 144, 0.4); /* semi-transparent pink */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav {
+  width: 12.5%;
+  list-style: none;
+  display: flex;
+}
+
+.nav li {
+  padding: 10px 50px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav li:hover {
+  background-color: rgba(137, 95, 152, 0.5);
+}
+
+/* Middle Section (Grid Area) */
+#mid {
+  position: relative;
+  height: 25vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Centered Logo */
+#logo {
+  position: absolute;
+  width: 80%;
+  /* display: flex; */
+  /* position: absolute;
+  max-width: 80%;
+  max-height: 18vh; */
+}
+
+#logo img {
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* Social Media Icons */
+.social-icons {
+  position: absolute;
+  /* top: 160px; */
+  bottom: 10px;
+  right: 40px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  height: 3.24vh;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+#bottom {
+  top:0;
+  height: 67vh; 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.25) 100%);
+  /* position: relative; */
+}
+
+/* Footer Text */
+.footer {
+  background-image: url('素材/連結圖.png');
+  background-size: cover;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
 }
